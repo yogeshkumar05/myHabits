@@ -1,0 +1,27 @@
+.sidenav-flex {
+    display: flex;
+    flex-direction: column;
+}
+.sidenav-container {
+    @extend .sidenav-flex;
+    justify-content: space-between;
+    width: 90px;
+    border-right: 1px solid;
+    color: #fff;
+    background: #2b5797;
+    padding-left: 5px;
+    a {
+        color: inherit;
+        text-decoration: none;
+        margin: 10px 0;
+    }
+    a:hover {
+        color: #adbace;
+    }
+}
+.top-sidenav {
+    @extend .sidenav-flex;
+}
+.bottom-sidenav {
+    @extend .sidenav-flex;
+}

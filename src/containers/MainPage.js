@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { fetchUsers } from '../action-creators/userActions';
 import { connect } from 'react-redux';
 import Main from '../components/Main';
+import TopActionBar from '../components/TopActionBar'
+
 
 class MainPage extends Component {
     constructor(props) {
@@ -17,7 +19,7 @@ class MainPage extends Component {
        console.log(nextProps.users);
     }
     render() {
-        return(<div><h1>My Habits</h1>
+        return(<div className='mainpage-container'><TopActionBar heading='My Habits'/>
         <Main users={this.props.users && this.props.users}/></div>);
     }
 }
