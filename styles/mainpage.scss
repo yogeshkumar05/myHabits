@@ -1,0 +1,13 @@
+
+@import './shared.scss';
+.main-container {
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+}
+.test-scroll {
+    height: 100px;
+}
+.mainpage-container {
+    @extend .body-container; 
+    
+}
