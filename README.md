@@ -1,2 +1,3 @@
-# myHabits
-An Android app to track my personal tasks &amp; habits
+# myHabits #muHealth
+personal health and wellnes platform that encourages the user to follow healthy habits.
+
