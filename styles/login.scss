@@ -1,0 +1,68 @@
+.sigin-userText {
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 40px;
+    }
+}
+.sigin-passText {
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 40px;
+    }
+}
+.social-signin {
+    display: flex;
+    justify-content: space-evenly;
+}
+.signin-btn-wrapper {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    button {
+        background: #7e3878;
+        border-color: none;
+    }
+}
+.signin-or {
+    text-align: center;
+}
+.modal-header {
+    h4{
+        width: 100%;
+        text-align: center;
+        color: #7e3878;
+    }
+}
+.signin-fb {
+    background: #3B5998;
+    color: #fff;
+    padding: 3px 15px;
+    border-radius: 5px;
+}
+.signin-google {
+    background: #DB4437;
+    color: #fff;
+    padding: 3px 15px;
+    border-radius: 5px;
+}
+.close-modal {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.footer-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.signup-text {
+    color: #7e3878;
+    text-decoration: underline;
+    cursor: pointer;
+}
