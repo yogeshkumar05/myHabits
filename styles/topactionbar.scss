@@ -1,3 +1,4 @@
+@import './variable.scss';
 .top-header-container {
     display: flex;
     justify-content: space-between;
@@ -7,7 +8,7 @@
     font-size: 30px;
     padding-top: 10px;
     padding-left: 10px;
-    color:#7e3878;
+    color:$main-color;
 }
 .page-actions {
     padding-top: 10px;

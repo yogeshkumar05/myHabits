@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import Main from '../components/Main';
 import TopActionBar from '../components/TopActionBar'
 
-
 class MainPage extends Component {
     constructor(props) {
         super(props);
