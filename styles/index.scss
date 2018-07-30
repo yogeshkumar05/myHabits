@@ -2,11 +2,19 @@
 @import './mainpage.scss';
 @import './topactionbar.scss';
 @import './login.scss';
+@import './add.scss';
 body {
     margin: 0;
     overflow: hidden;
+    font-family: Verdana, sans-serif;
+    background-color: #DADFE1 !important;
 }
 .app-container {
     height: 100vh;
     display: flex;
+}
+#container {
+    max-width: 1024px;
+    margin: 0 auto;
+    background: #fff;
 }

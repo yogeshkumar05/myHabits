@@ -1,0 +1,64 @@
+{
+    "users" : [
+        {
+            
+        }
+    ],
+
+    "goals" : [
+        {
+        "title" : "brush twice a day",
+        "img" : "https://www.w3schools.com/css/img_5terre.jpg",
+        "description": "Brushing twice a days keeps your teeth healthy",
+        "repeats" : {
+            "frequency" : "daily",
+            "counts" : 2
+            }
+        },
+        {
+            "title" : "walk 8000 steps daily",
+            "img" : "https://www.w3schools.com/css/img_mountains.jpg",
+            "description": "Walking at least 8000 steps a day keeps you fit",
+            "repeats" : {
+                "frequency" : "daily",
+                "counts" : 1
+                }
+        },
+        {
+            "title" : "brush twice a day",
+            "img" : "https://www.w3schools.com/css/img_5terre.jpg",
+            "description": "Brushing twice a days keeps your teeth healthy",
+            "repeats" : {
+                "frequency" : "daily",
+                "counts" : 2
+                }
+            },
+            {
+                "title" : "walk 8000 steps daily",
+                "img" : "https://www.w3schools.com/css/img_mountains.jpg",
+                "description": "Walking at least 8000 steps a day keeps you fit",
+                "repeats" : {
+                    "frequency" : "daily",
+                    "counts" : 1
+                    }
+            },
+            {
+                "title" : "brush twice a day",
+                "img" : "https://www.w3schools.com/css/img_5terre.jpg",
+                "description": "Brushing twice a days keeps your teeth healthy",
+                "repeats" : {
+                    "frequency" : "daily",
+                    "counts" : 2
+                    }
+                },
+                {
+                    "title" : "walk 8000 steps daily",
+                    "img" : "https://www.w3schools.com/css/img_mountains.jpg",
+                    "description": "Walking at least 8000 steps a day keeps you fit",
+                    "repeats" : {
+                        "frequency" : "daily",
+                        "counts" : 1
+                        }
+                }
+    ]
+}

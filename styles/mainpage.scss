@@ -1,5 +1,6 @@
 
 @import './shared.scss';
+@import './variable.scss';
 .main-container {
     height: calc(100vh - 100px);
     overflow-y: scroll;
@@ -13,13 +14,15 @@
 .login-user {
     height:50px;
     button {
-        background: #7e3878;
+        background: $main-color;
+        border:none;
     }
 }
 .register-user {
     height:50px;
     button {
-        background: #7e3878;
+        background: $main-color;
+        border: none;
     }
 }
 

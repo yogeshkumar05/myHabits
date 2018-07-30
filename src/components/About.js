@@ -8,4 +8,3 @@ const About = (props) => {
     </div>);
 }
 export default About;
-

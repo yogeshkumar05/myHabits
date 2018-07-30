@@ -1,0 +1,206 @@
+@import './mainpage.scss';
+@import './variable.scss';
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.add-container {
+    @extend .main-container;
+    .btn-primary {
+        margin-bottom: 20px;
+    }
+}
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.prev {
+    position: absolute;
+    // top: 8px;
+    top: calc(50% - 18px);
+    left: 16px;
+}
+
+.next {
+    position: absolute;
+    // top: 8px;
+    top: calc(50% - 18px);
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.centered {
+    position: absolute;
+    // top: 50%;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dots-wrapper {
+    @extend .centered;
+    bottom:0px;
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .dot:hover {
+        background-color: #717171;
+      }
+    .dotActive {
+        @extend .dot;
+        background-color: #ff0000 !important;
+    }
+}
+img {
+    width: 100%
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    // top: 50%;
+    width: auto;
+    // padding: 16px;
+    // margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  .prev:hover, .next:hover {
+    font-size: 25px;
+  }
+  /* Fading animation */
+.fade {
+    max-height: 350px;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .1} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .1} 
+    to {opacity: 1}
+  }
+
+
+
+
+  div.goal-img-wrapper {
+    border: 1px solid #ccc;
+}
+
+div.goal-img-wrapper:hover {
+    border: 1px solid #777;
+}
+
+div.goal-img-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+div.goal-title {
+    padding: 15px;
+    padding-left: 5px;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.goal-wrapper {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+   // box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19); 
+   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .goal-wrapper {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .goal-wrapper {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.goal-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .read-wrapper {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  .goal-img-wrapper:hover .goal-image {
+    opacity: 0.3;
+  }
+  
+  .goal-img-wrapper:hover .read-wrapper {
+    opacity: 1;
+  }
+  
+  .read-text {
+    background-color: $main-color;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    cursor: pointer;
+  }
+  .image-wrapper {
+      position: relative;
+  }
+  .add-icon {
+    width: 20px !important;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .add-icon:hover {
+      color: red;
+  }
