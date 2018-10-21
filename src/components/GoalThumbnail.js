@@ -2,7 +2,8 @@ import React from 'react';
 import TopActionBar from './TopActionBar';
 
 const GoalThumbNail = (props) => {
-    const {imgsrc, goalTitle} = props;    
+    const {imgsrc, goalTitle, action} = props;   
+    const viewPage = action && action === 'view'; 
     return(<div class="goal-wrapper">
     <div class="goal-img-wrapper">
       <div className='image-wrapper'>
@@ -12,7 +13,11 @@ const GoalThumbNail = (props) => {
       </div>
       </div>
 
-      <div class="goal-title"><img className='add-icon' src = '../../images/addIcon.png' /> {goalTitle}</div>
+      <div class="goal-title">{!viewPage && <img className='add-icon' src = '../../images/addIcon.png' />} {goalTitle}</div>
+      {
+        viewPage && <div className='streak-wrapper'><span>Streak:</span><span>100 days from Jun 20 to Jul 31</span>
+          </div>
+      }
     </div>
   </div>);
 }

@@ -14,9 +14,9 @@ const Sidenav = (props) => {
         </div>
         <div className='bottom-sidenav'>
             <Link to='/notifications'>Inbox <Badge>5</Badge></Link>
+            <Link to='/profile'>Profile</Link>
             <Link to='/feedback'>Feedback</Link>
             <Link to="/about">About</Link>
-            <Link to='/profile'>Profile</Link>
         </div>
     </div>);
 }

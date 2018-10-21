@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Button} from 'react-bootstrap';
 import Login from './Login';
 import Register from './Register';
-
+import Footer from './Footer';
 export default class Main extends Component {
     constructor(props) {
         super(props);
@@ -46,8 +46,8 @@ export default class Main extends Component {
     {this.state.showLogin &&
     <Login showRegisterModal={this.showRegisterModal} showLogin ={this.state.showLogin} hideLoginModal={this.hideLoginModal}/>}
     {this.state.showRegister &&
-    <Register hideRegisterModal={this.hideRegisterModal}/>}
-    
+    <Register hideRegisterModal={this.hideRegisterModal}/>}   
+    <div>Footer</div> 
     </div>);
 }
 }

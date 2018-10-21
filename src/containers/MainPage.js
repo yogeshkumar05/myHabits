@@ -3,6 +3,7 @@ import { fetchUsers } from '../action-creators/userActions';
 import { connect } from 'react-redux';
 import Main from '../components/Main';
 import TopActionBar from '../components/TopActionBar'
+import Footer from '../components/Footer';
 
 class MainPage extends Component {
     constructor(props) {
